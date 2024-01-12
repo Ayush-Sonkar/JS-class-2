@@ -35,3 +35,22 @@ function MRectangle(len, bre) {
 }
 let mrect = MRectangle(8, 5);
 console.log(mrect);
+
+
+// constructor function
+function Rectangle(len, bre) {
+	this.lambai = len;
+	this.chaudhai= bre;
+	this.draw=function() {
+		console.log("Lets draw rectangle");
+	}
+	this.area=function(len,bre) {
+		return len*bre;
+	};
+}
+
+let rec= new Rectangle(4,5);
+console.log(rec);
+console.log(rec.area(90,5));
+
+	 
