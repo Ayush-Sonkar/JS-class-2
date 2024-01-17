@@ -76,14 +76,67 @@ function incr(z) {
 }
 incr(z);
 
-
 console.log(incr(z));
 
-
-let x ={value: 50};
+let x = { value: 50 };
 function inc(x) {
-	x.value++;
+  x.value++;
 }
 inc(x);
 
 console.log(x.value);
+
+let rectanglex = {
+  len: 67,
+  bre: 89,
+  height: 90,
+};
+console.log(rectanglex);
+// for in loop
+for (let k in rectanglex) {
+  console.log(k, rectanglex[k]);
+}
+
+// Array methods
+
+let mx = [1, 2, 3, 4, 5, 6, 7];
+mx.pop();
+mx.pop();
+mx.shift();
+mx.slice(2, 4);
+console.log(mx);
+
+// Empty an Array
+mx.length = 0;
+console.log(mx);
+
+// combining an array
+let arr1 = [1, 2, 3, 4, 5];
+let arr2 = [6, 7, 8, 9, 10];
+let arr3 = arr1.concat(arr2);
+console.log(arr3);
+
+// slicing an array
+let array4 = [1, 4, 6, 8, 9, 3, 456, 890];
+let sliced = array4.slice(2);
+console.log(sliced);
+// spread coperator
+let array1 = [3, 6, 8, 9, 0];
+let array2 = [6, 789, 3, 4, 5];
+let combined = [...array1, ...array2, true, false, "Ayush"];
+console.log(combined);
+
+// iterating an array
+let arrayx = [1, 6, 9, 3, 5, 8, 0];
+for (let elements of arrayx) {
+  console.log(elements);
+}
+
+let numbers = [1, 2, 3, 4, 5];
+let joined = numbers.join("");
+console.log(joined);
+
+
+let numbers2 =[2,56,24,78,96,90];
+let sored = numbers2.sort();
+console.log(sored);
